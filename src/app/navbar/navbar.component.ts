@@ -24,16 +24,16 @@ export class NavbarComponent implements OnInit {
     navText: ['', ''],
     responsive: {
       0: {
-        items: 1
+        items: 4
       },
-      400: {
-        items: 2
+      480: {
+        items: 5
       },
-      740: {
-        items: 3
+      767: {
+        items: 6
       },
-      940: {
-        items: 9.4
+      1024: {
+        items: 9
       }
     },
     nav: true
@@ -41,6 +41,7 @@ export class NavbarComponent implements OnInit {
   constructor(private _Router: Router, private toastr: ToastrService) { }
 
   ngOnInit(): void {
+    
   }
 
   searchForm: FormGroup = new FormGroup({

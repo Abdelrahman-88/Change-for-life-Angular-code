@@ -31,6 +31,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { FoodComponent } from './food/food.component';
 import { FlipModule } from 'ngx-flip';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -68,6 +69,7 @@ import { FlipModule } from 'ngx-flip';
     RouterModule,
     CarouselModule,
     FlipModule,
+
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
