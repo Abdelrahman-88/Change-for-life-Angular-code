@@ -1,0 +1,23 @@
+@import "../../styles.scss";
+
+.head{
+    background-color: $orange;
+}
+
+.head img{
+    width: 50px;
+}
+
+h1{
+    color: $white;
+}
+
+.container img{
+    border-radius: 4px;
+    transition: transform .5s , opacity .5s;
+}
+
+.meal:hover img{
+    transform: scale(.9);
+    opacity: .8;
+}

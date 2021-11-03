@@ -1,0 +1,20 @@
+@import "../../styles.scss";
+
+.footer{
+    background-color: $green;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $white;
+    cursor: pointer;
+}
+
+.icon i{
+    color: $green;
+}

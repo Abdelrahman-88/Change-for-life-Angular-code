@@ -1,0 +1,43 @@
+@import "../../styles.scss";
+
+.head{
+    background-color: $orange;
+}
+
+.head img{
+    width: 50px;
+}
+
+h1{
+    color: $white;
+}
+
+h2{
+    color: $red;
+}
+
+.container img{
+    border-radius: 4px;
+    max-height: 200px;
+}
+
+.meal{
+    transition: transform .5s , opacity .5s;
+    border-radius: 4px;
+}
+
+.meal:hover{
+    transform: scale(.9);
+    opacity: .8;
+}
+
+.rate{
+    color:$green;
+}
+
+.searchIcon{
+    position: absolute;
+    right: 0;
+    bottom: 7%;
+    z-index: 9;
+}

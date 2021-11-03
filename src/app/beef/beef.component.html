@@ -1,0 +1,62 @@
+<ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#007a39" type = "ball-scale-ripple-multiple" [fullScreen] = "true"></ngx-spinner>
+
+<section>
+    <header class="text-center">
+
+        <div class="head py-5 d-flex justify-content-center align-items-center">
+            <img src="assets/img/recipes.svg" alt="recipes">
+            <h1 class="fw-bolder">
+                Beef
+            </h1>
+
+        </div>
+        <img src="assets/img/lip-orange.png" alt="lip">
+    </header>
+
+    <div class="container py-5">
+        <div class="w-75 m-auto position-relative my-5">
+            <div class="searchIcon">
+                <img src="assets/img/search.png" alt="search">
+            </div>
+            <form [formGroup]="searchForm" class="form-floating my-3">
+                <input (keyup)="search(searchForm)" formControlName="term" type="text"
+                    class="form-control bg-transparent text-success border-success" id="floatingInput"
+                    placeholder="Search">
+                <label class="text-success" for="floatingInput">Search</label>
+            </form>
+
+        </div>
+        <div class="row">
+            <div *ngIf="(recipes|search:terms).length == 0 && terms"
+                class="d-flex justify-content-center align-items-center mt-5 fw-bolder">
+                <h2>
+                    No Match
+                </h2>
+            </div>
+            <div *ngFor="let recipe of recipes|search:terms" class="col-md-4 p-4">
+                <a [routerLink]="['/recipesdetails', recipe.recipe_id]">
+                    <div class="meal bg-lite shadow">
+                        <div>
+                            <img class="w-100" [src]="recipe.image_url" [alt]="recipe.title">
+                        </div>
+                        <div class="text-center my-2">
+                            <h5 class="fw-bolder">
+                                {{recipe.title}}
+                            </h5>
+                        </div>
+                        <div class="d-flex align-items-end justify-content-between p-2">
+                            <div><img src="assets/img/imadethis.png" alt="rank"></div>
+                            <div>
+                                <p class="m-0 rate">
+                                    <i class="fas fa-star-half-alt"></i>{{recipe.social_rank.toFixed(0)}}
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</section>

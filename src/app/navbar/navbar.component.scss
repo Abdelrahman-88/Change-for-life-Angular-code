@@ -1,0 +1,53 @@
+@import "../../styles.scss";
+
+.navbar{
+    background-color: $yellow;
+}
+
+.logo{
+    width: 150px;
+}
+
+.active{
+background-color: $green;
+border-radius: 4px;
+color: $white !important;
+}
+
+.navbar-toggler:focus{
+    box-shadow: unset;
+}
+
+.fa-bars,.nav-link{
+    transition: color .5s;
+}
+
+.navbar-toggler:hover .fa-bars{
+color: $green;
+}
+
+.nav-link img , .btn img{
+    width: 30px;
+}
+
+.nav-link:hover{
+    color: $white !important;
+}
+
+.slider{
+    background-image: url(../../assets/img/recipes-pattern.png);
+}
+
+.meal{
+    transition: transform .5s , opacity .5s;
+    opacity: .8;
+}
+
+.meal:hover{
+    transform: scale(.9);
+    opacity: 1;
+}
+
+.meal img{
+    border-radius: 4px;
+}

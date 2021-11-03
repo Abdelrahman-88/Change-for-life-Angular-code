@@ -1,0 +1,40 @@
+@import "../../styles.scss";
+
+.head{
+    background-color: $orange;
+}
+
+.head img{
+    width: 50px;
+}
+
+.row{
+    background-image: url(../../assets/img/recipes-pattern.png);
+    border-radius: 4px;
+}
+
+h1{
+    color: $white;
+}
+
+h2{
+    color: $red;
+}
+
+.container img{
+    border-radius: 4px;
+
+}
+
+i{
+    color:$green;
+    transition: color .5s;
+}
+
+.fa-link:hover{
+    color: $orange;
+}
+
+.ingredient img{
+    width: 30px;
+}

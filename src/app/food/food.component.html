@@ -1,0 +1,259 @@
+<section>
+    <header class="py-5">
+        <div class="container">
+            <div>
+                <h1 class="fw-bolder">Food Facts</h1>
+            </div>
+            <div>
+                <img src="assets/img/search.png" alt="search">
+            </div>
+        </div>
+    </header>
+
+    <div class="container py-5">
+        <h2 class="text-center fw-bolder fs-1">Do you know what's in these family favourites?
+        </h2>
+        <div class="row py-5">
+            <div class="col-md-6 col-lg-4">
+                <ngx-flip class="fact px-3 my-3" [flip]="flipCream" (click)="onClick('cream')">
+                    <div front>
+                        <div class="bg-light shadow p-3 content">
+
+                            <div class="d-flex justify-content-end align-items-end">
+                                <h6 class="me-2">Flip to reveal</h6>
+                                <img src="assets/img/swap.png" alt="swap">
+                            </div>
+
+                            <div class="text-center py-4">
+                                <h3 class="py-2 fw-bolder">Ice cream</h3>
+                                <img class="w-50" src="assets/img/icecream.png" alt="icecream">
+                            </div>
+                            <p class="text-center">
+                                Do you know what's inside this ice cream?
+                            </p>
+
+                        </div>
+                    </div>
+                    <div back>
+                        <div class="back shadow p-3 content">
+                            <div class="d-flex justify-content-end align-items-end">
+                                <h6 class="me-2">Flip to reveal</h6>
+                                <img src="assets/img/swap.png" alt="swap">
+                            </div>
+
+                            <div class="text-center py-5">
+                                <h3 class="py-2 fw-bolder">Ice cream</h3>
+                                <img class="w-75" src="assets/img/5cubes.png" alt="5cubes">
+                            </div>
+                            <p class="text-center py-4">
+                                Yikes! Ice cream has a whopping 5 cubes of sugar!
+                            </p>
+                        </div>
+                    </div>
+                </ngx-flip>
+
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <ngx-flip class="fact px-3 my-3" [flip]="flipCereal" (click)="onClick('cereal')">
+                    <div front>
+                        <div class="bg-light shadow p-3 content">
+
+                            <div class="d-flex justify-content-end align-items-end">
+                                <h6 class="me-2">Flip to reveal</h6>
+                                <img src="assets/img/swap.png" alt="swap">
+                            </div>
+
+                            <div class="text-center py-4">
+                                <h3 class="py-2 fw-bolder">Cereal bar</h3>
+                                <img class="w-50" src="assets/img/cereal.png" alt="cereal">
+                            </div>
+                            <p class="text-center">
+                                Do you know what's inside this cereal bar?
+                            </p>
+
+                        </div>
+                    </div>
+                    <div back>
+                        <div class="back shadow p-3 content">
+                            <div class="d-flex justify-content-end align-items-end">
+                                <h6 class="me-2">Flip to reveal</h6>
+                                <img src="assets/img/swap.png" alt="swap">
+                            </div>
+
+                            <div class="text-center py-5">
+                                <h3 class="py-2 fw-bolder">Cereal bar</h3>
+                                <img class="w-75" src="assets/img/3cubes.png" alt="3cubes">
+                            </div>
+                            <p class="text-center py-4">
+                                Woah! Just one cereal bar has 3 cubes of sugar!
+                            </p>
+                        </div>
+                    </div>
+                </ngx-flip>
+
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <ngx-flip class="fact px-3 my-3" [flip]="flipChoco" (click)="onClick('choco')">
+                    <div front>
+                        <div class="bg-light shadow p-3 content">
+
+                            <div class="d-flex justify-content-end align-items-end">
+                                <h6 class="me-2">Flip to reveal</h6>
+                                <img src="assets/img/swap.png" alt="swap">
+                            </div>
+
+                            <div class="text-center py-4">
+                                <h3 class="py-2 fw-bolder">Chocolate bar</h3>
+                                <img class="w-50" src="assets/img/choc.png" alt="choco">
+                            </div>
+                            <p class="text-center">
+                                Do you know what's inside this chocolate bar?
+                            </p>
+
+                        </div>
+                    </div>
+                    <div back>
+                        <div class="back shadow p-3 content">
+                            <div class="d-flex justify-content-end align-items-end">
+                                <h6 class="me-2">Flip to reveal</h6>
+                                <img src="assets/img/swap.png" alt="swap">
+                            </div>
+
+                            <div class="text-center py-5">
+                                <h3 class="py-2 fw-bolder">Chocolate bar</h3>
+                                <img class="w-75" src="assets/img/6cubes.png" alt="6cubes">
+                            </div>
+                            <p class="text-center py-4">
+                                Woah! Just one chocolate bar has 6 cubes of sugar!
+                            </p>
+                        </div>
+                    </div>
+                </ngx-flip>
+
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <ngx-flip class="fact px-3 my-3" [flip]="flipSweets" (click)="onClick('sweets')">
+                    <div front>
+                        <div class="bg-light shadow p-3 content">
+
+                            <div class="d-flex justify-content-end align-items-end">
+                                <h6 class="me-2">Flip to reveal</h6>
+                                <img src="assets/img/swap.png" alt="swap">
+                            </div>
+
+                            <div class="text-center py-4">
+                                <h3 class="py-2 fw-bolder">Fun-sized sweets</h3>
+                                <img class="w-50" src="assets/img/sweets.png" alt="sweets">
+                            </div>
+                            <p class="text-center">
+                                Do you know what's inside these sweets?
+                            </p>
+
+                        </div>
+                    </div>
+                    <div back>
+                        <div class="back shadow p-3 content">
+                            <div class="d-flex justify-content-end align-items-end">
+                                <h6 class="me-2">Flip to reveal</h6>
+                                <img src="assets/img/swap.png" alt="swap">
+                            </div>
+
+                            <div class="text-center py-5">
+                                <h3 class="py-2 fw-bolder">Fun-sized sweets</h3>
+                                <img class="w-75" src="assets/img/5cubes.png" alt="5cubes">
+                            </div>
+                            <p class="text-center py-4">
+                                One bag of fun-sized sweets has 5 cubes of sugar!
+                            </p>
+                        </div>
+                    </div>
+                </ngx-flip>
+
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <ngx-flip class="fact px-3 my-3" [flip]="flipYoghurt" (click)="onClick('yoghurt')">
+                    <div front>
+                        <div class="bg-light shadow p-3 content">
+
+                            <div class="d-flex justify-content-end align-items-end">
+                                <h6 class="me-2">Flip to reveal</h6>
+                                <img src="assets/img/swap.png" alt="swap">
+                            </div>
+
+                            <div class="text-center py-4">
+                                <h3 class="py-2 fw-bolder">Yoghurts</h3>
+                                <img class="w-50" src="assets/img/yoghurt.png" alt="yoghurt">
+                            </div>
+                            <p class="text-center">
+                                Do you know what's inside this yoghurt?
+                            </p>
+
+                        </div>
+                    </div>
+                    <div back>
+                        <div class="back shadow p-3 content">
+                            <div class="d-flex justify-content-end align-items-end">
+                                <h6 class="me-2">Flip to reveal</h6>
+                                <img src="assets/img/swap.png" alt="swap">
+                            </div>
+
+                            <div class="text-center py-5">
+                                <h3 class="py-2 fw-bolder">Yoghurts</h3>
+                                <img class="w-75" src="assets/img/6cubes.png" alt="6cubes">
+                            </div>
+                            <p class="text-center py-4">
+                                Woah! Just one pot of sugary yoghurt has 6 cubes of sugar!
+                            </p>
+                        </div>
+                    </div>
+                </ngx-flip>
+
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <ngx-flip class="fact px-3 my-3" [flip]="flipJuice" (click)="onClick('juice')">
+                    <div front>
+                        <div class="bg-light shadow p-3 content">
+
+                            <div class="d-flex justify-content-end align-items-end">
+                                <h6 class="me-2">Flip to reveal</h6>
+                                <img src="assets/img/swap.png" alt="swap">
+                            </div>
+
+                            <div class="text-center py-4">
+                                <h3 class="py-3 fw-bolder">Juice drink</h3>
+                                <img class="w-50 py-2" src="assets/img/drink.png" alt="juice">
+                            </div>
+                            <p class="text-center">
+                                Do you know what's inside this juice drink?
+                            </p>
+
+                        </div>
+                    </div>
+                    <div back>
+                        <div class="back shadow p-3 content">
+                            <div class="d-flex justify-content-end align-items-end">
+                                <h6 class="me-2">Flip to reveal</h6>
+                                <img src="assets/img/swap.png" alt="swap">
+                            </div>
+
+                            <div class="text-center py-5">
+                                <h3 class="py-2 fw-bolder">Juice drink</h3>
+                                <img class="w-75" src="assets/img/2cubes.png" alt="2cubes">
+                            </div>
+                            <p class="text-center py-4">
+                                Juice drinks don't contain any sat fat or salt, but just one pouch has 2 cubes of sugar!
+                            </p>
+                        </div>
+                    </div>
+                </ngx-flip>
+
+            </div>
+            
+        </div>
+    </div>
+</section>

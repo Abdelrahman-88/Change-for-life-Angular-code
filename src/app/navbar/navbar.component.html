@@ -1,0 +1,153 @@
+<nav class="navbar navbar-expand-lg fixed-top shadow">
+  <div class="container">
+    <a class="navbar-brand" [routerLink]="['/recipes']"><img class="logo" src="assets/img/logo.png" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-lg-0 py-2">
+        <li class="nav-item me-1">
+          <a class="nav-link ps-2 py-1 d-flex align-items-center" aria-current="page" [routerLink]="['/recipes']" routerLinkActive="active"><img
+              src="assets/img/recipes.svg" alt="recipes"> Recipes</a>
+        </li>
+        <li class="nav-item me-1">
+          <a class="nav-link ps-2 py-1 d-flex align-items-center" [routerLink]="['/food']" routerLinkActive="active"><img
+              src="assets/img/search.svg" alt="food"> Food facts</a>
+        </li>
+        <li class="nav-item me-1">
+          <a class="nav-link ps-2 py-1 d-flex align-items-center" [routerLink]="['/activities']" routerLinkActive="active"><img
+              src="assets/img/activites.svg" alt="activities"> Activities</a>
+        </li>
+        <li class="nav-item me-1">
+          <a class="nav-link ps-2 py-1 d-flex align-items-center" [routerLink]="['/child']" routerLinkActive="active"><img
+              src="assets/img/child.svg" alt="child"> Your child's weight</a>
+        </li>
+
+      </ul>
+      <form [formGroup]="searchForm" (ngSubmit)="search(searchForm)" class="d-flex py-2">
+        <input formControlName="term" class="form-control border-success me-2 bg-transparent search text-success"
+          placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success d-flex align-items-center border-0" type="submit"><img
+          src="assets/img/search.png" alt="search"></button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="slider py-5">
+  <div class="py-5 container mt-5">
+    <owl-carousel-o [options]="customOptions">
+
+      <ng-template carouselSlide> <a [routerLink]="['/banana']">
+          <div class="meal">
+            <div>
+              <img class="img-fluid shadow" src="assets/img/banana.jpg" alt="banana">
+            </div>
+            <div class="text-center">
+              <h3>
+                Banana
+              </h3>
+            </div>
+          </div>
+        </a></ng-template>
+      <ng-template carouselSlide><a [routerLink]="['/apple']">
+          <div class="meal">
+            <div>
+              <img class="img-fluid shadow" src="assets/img/apple.jpg" alt="apple">
+            </div>
+            <div class="text-center">
+              <h3>
+                Apple
+              </h3>
+            </div>
+          </div>
+        </a></ng-template>
+      <ng-template carouselSlide> <a [routerLink]="['/beef']">
+          <div class="meal">
+            <div>
+              <img class="img-fluid shadow" src="assets/img/beef.jpg" alt="beef">
+            </div>
+            <div class="text-center">
+              <h3>
+                Beef
+              </h3>
+            </div>
+          </div>
+        </a></ng-template>
+      <ng-template carouselSlide> <a [routerLink]="['/fish']">
+          <div class="meal">
+            <div>
+              <img class="img-fluid shadow" src="assets/img/fish.jpg" alt="fish">
+            </div>
+            <div class="text-center">
+              <h3>
+                Fish
+              </h3>
+            </div>
+          </div>
+        </a></ng-template>
+      <ng-template carouselSlide> <a [routerLink]="['/mango']">
+          <div class="meal">
+            <div>
+              <img class="img-fluid shadow" src="assets/img/mango.jpg" alt="mango">
+            </div>
+            <div class="text-center">
+              <h3>
+                Mango
+              </h3>
+            </div>
+          </div>
+        </a></ng-template>
+      <ng-template carouselSlide> <a [routerLink]="['/pasta']">
+          <div class="meal">
+            <div>
+              <img class="img-fluid shadow" src="assets/img/pasta.jpg" alt="pasta">
+            </div>
+            <div class="text-center">
+              <h3>
+                Pasta
+              </h3>
+            </div>
+          </div>
+        </a></ng-template>
+      <ng-template carouselSlide> <a [routerLink]="['/potato']">
+          <div class="meal">
+            <div>
+              <img class="img-fluid shadow" src="assets/img/potato.jpg" alt="potato">
+            </div>
+            <div class="text-center">
+              <h3>
+                Potato
+              </h3>
+            </div>
+          </div>
+        </a></ng-template>
+      <ng-template carouselSlide> <a [routerLink]="['/salad']">
+          <div class="meal">
+            <div>
+              <img class="img-fluid shadow" src="assets/img/salad.jpg" alt="salad">
+            </div>
+            <div class="text-center">
+              <h3>
+                Salad
+              </h3>
+            </div>
+          </div>
+        </a></ng-template>
+      <ng-template carouselSlide> <a [routerLink]="['/steak']">
+          <div class="meal">
+            <div>
+              <img class="img-fluid shadow" src="assets/img/steak.jpg" alt="steak">
+            </div>
+            <div class="text-center">
+              <h3>
+                Steak
+              </h3>
+            </div>
+          </div>
+        </a></ng-template>
+
+    </owl-carousel-o>
+  </div>
+</div>

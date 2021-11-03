@@ -1,0 +1,92 @@
+@import "../../styles.scss";
+
+header,
+header .card-body {
+    background-color: $yellow;
+}
+
+h1 {
+    color: $red;
+    font-size: 70px;
+}
+
+.open {
+    transition: color 0.5s;
+}
+
+.open:hover {
+    color: $red !important;
+}
+
+.headNav {
+    background-color: $green;
+}
+
+.link {
+    color: $white !important;
+    transition: color 0.5s;
+}
+
+.link:hover {
+    color: $yellow !important;
+}
+
+.veryFooter,
+.overFooter,
+.healthyFooter {
+    background-color: $yellow;
+}
+
+.veryImg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 388px;
+}
+
+.changeBtn {
+    position: relative;
+    z-index: 2;
+}
+
+.overImg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 340px;
+}
+
+.healthyImg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 305px;
+}
+
+.healthyText {
+    border-radius: 4px;
+}
+
+.healthyText::after {
+    top: 50%;
+    content: " ";
+    position: absolute;
+    right: 100%;
+    width: 25px;
+    height: 25px;
+    background-color: $white;
+    transform: rotate(45deg) translate(50%,-50%);
+}
+
+.changeItem{
+    border-radius: 4px;
+}
+
+.headChange{
+    background-color: $yellow;
+}
+
+.changeImg{
+    background-color: $yellow;
+    border-radius: 4px;
+}

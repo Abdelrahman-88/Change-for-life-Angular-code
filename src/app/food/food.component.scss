@@ -1,0 +1,59 @@
+@import "../../styles.scss";
+
+header{
+    background-color: $yellow;
+}
+
+header .container{
+    position: relative;
+}
+
+h1{
+    color: $red;
+    font-size: 70px;
+}
+
+header img{
+    position: absolute;
+    right: 0;
+    top: -65%;
+    width: 300px;
+}
+
+@media screen and (max-width: 600px) {
+    header img{
+        top: -19%;
+        width: 240px;
+    }
+}
+
+.fact{
+    min-height: 450px;
+    cursor: pointer;
+    transition: transform .5s;
+}
+
+.content{
+    min-height: 450px;
+    border-radius: 4px;
+}
+
+.fact:hover{
+    transform: translateY(-3%);
+}
+
+h6{
+    transition: color .5s;
+}
+
+.fact:hover h6{
+    color: $red;
+}
+
+.fact p{
+    color: $red;
+}
+
+.back{
+    background-color: $yellow;
+}

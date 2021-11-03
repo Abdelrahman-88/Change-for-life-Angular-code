@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+$yellow:#ffdf2f;
+$orange:#e97122;
+$green:#007a39;
+$white:white;
+$dark:#212529;
+$red:#c80000;
+$font:'Caveat', cursive;
+
+
+
+body{
+    font-family: $font;
+    color: $dark;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: $dark !important;
+}
