@@ -22,3 +22,7 @@ a{
     text-decoration: none;
     color: $dark !important;
 }
+
+:root {
+    scroll-behavior: unset;
+}

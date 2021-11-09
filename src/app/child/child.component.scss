@@ -25,6 +25,7 @@ h1 {
 .link {
     color: $white !important;
     transition: color 0.5s;
+    cursor: pointer;
 }
 
 .link:hover {
@@ -89,4 +90,23 @@ h1 {
 .changeImg{
     background-color: $yellow;
     border-radius: 4px;
+}
+
+@media screen and (max-width: 600px){
+h1{
+    font-size: 40px;
+}
+.link{
+    font-size: 13px;
+}
+.head{
+    width: 100% !important;
+}
+.healthyText{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+.open{
+    font-size: 16px !important;
+}
 }

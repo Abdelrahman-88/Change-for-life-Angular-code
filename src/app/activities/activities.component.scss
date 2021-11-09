@@ -20,13 +20,6 @@ header img{
     width: 300px;
 }
 
-@media screen and (max-width: 600px) {
-    header img{
-        top: -19%;
-        width: 240px;
-    }
-}
-
 .reasons{
     background-color: $yellow;
 }
@@ -148,7 +141,7 @@ transition: color .5s;
     transform: translateX(-50%);
 }
 
-@media screen and (min-width: 600px) and (max-width: 1200px){
+@media screen and (min-width: 768px) and (max-width: 1200px){
     .cardIcon{
         width: 250px;
     }
@@ -172,4 +165,45 @@ transition: color .5s;
 
 .like{
     color: $green;
+}
+
+@media screen and (min-width: 420px) and (max-width: 768px){
+    h1{
+        font-size: 40px;
+    }
+    header img{
+        top: -55%;
+        width: 200px;
+    }
+    .headP{
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    h1{
+        font-size: 40px;
+    }
+    header img{
+        top: -55%;
+        width: 200px;
+    }
+    .headP{
+        width: 100% !important;
+    }
+    .gameContentText{
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .cardIcon{
+        width: 270px;
+    }
+    .cardHead{
+        top: 0;
+        transform: translateY(-10%);
+    }
+
+    .cardLip{
+        bottom: -4%;
+    }
 }

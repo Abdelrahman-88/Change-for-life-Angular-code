@@ -20,10 +20,13 @@ header img{
     width: 300px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+    h1{
+        font-size: 40px;
+    }
     header img{
-        top: -19%;
-        width: 240px;
+        top: -55%;
+        width: 200px;
     }
 }
 

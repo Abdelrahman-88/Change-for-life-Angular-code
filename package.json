@@ -24,6 +24,8 @@
     "ngx-carousel-lib": "^0.1.2",
     "ngx-flip": "^9.0.0",
     "ngx-owl-carousel-o": "^6.0.0",
+    "ngx-page-scroll": "^7.0.6",
+    "ngx-page-scroll-core": "^7.0.6",
     "ngx-spinner": "^12.0.0",
     "ngx-toastr": "^14.1.4",
     "rxjs": "~6.6.0",

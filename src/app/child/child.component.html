@@ -18,8 +18,7 @@
                             healthy weight with a few simple changes to help them eat more healthily and be more active.
                         </p>
 
-                        <button class="btn btn-outline-success my-3 fw-bolder fs-3 rounded-pill px-4" [routerLink]='"."'
-                            [fragment]="'change'">Make a
+                        <button class="btn btn-outline-success my-3 fw-bolder fs-3 rounded-pill px-4" (click)="change()">Make a
                             change today!</button>
                         <p>
                             <a class="open d-flex align-items-center fs-4" data-bs-toggle="collapse"
@@ -48,16 +47,16 @@
             </div>
         </div>
         <div class="headNav text-center py-2">
-            <a class="m-2 link" [routerLink]='"."' [fragment]="'very'">Very overweight</a>
-            <a class="m-2 link" [routerLink]='"."' [fragment]="'over'">Overweight</a>
-            <a class="m-2 link" [routerLink]='"."' [fragment]="'healthy'">Healthy weight</a>
-            <a class="m-2 link" [routerLink]='"."' [fragment]="'under'">Under weight</a>
+            <a (click)="very()" class="m-2 link">Very overweight</a>
+            <a (click)="over()" class="m-2 link">Overweight</a>
+            <a (click)="healthy()" class="m-2 link">Healthy weight</a>
+            <a (click)="under()" class="m-2 link">Under weight</a>
         </div>
     </header>
 
     <div id="very" class="bg-light">
         <div class="container py-5">
-            <div class="text-center py-5 w-75 m-auto">
+            <div class="text-center py-5 w-75 m-auto head">
                 <h2 class="fw-bolder fs-1 pb-2">
                     Very overweight
                 </h2>
@@ -160,8 +159,7 @@
             </div>
         </div>
         <div class="veryFooter text-center py-5 position-relative overflow-hidden">
-            <button class="changeBtn btn btn-outline-success my-3 fw-bolder fs-3 rounded-pill px-4" [routerLink]='"."'
-            [fragment]="'change'">Make a
+            <button class="changeBtn btn btn-outline-success my-3 fw-bolder fs-3 rounded-pill px-4" (click)="change()">Make a
                 change
                 today!</button>
 
@@ -172,7 +170,7 @@
 
     <div id="over" class="bg-light">
         <div class="container py-5">
-            <div class="text-center py-5 w-75 m-auto">
+            <div class="text-center py-5 w-75 m-auto head">
                 <h2 class="fw-bolder fs-1 pb-2">
                     Overweight
                 </h2>
@@ -274,8 +272,7 @@
             </div>
         </div>
         <div class="overFooter text-center py-5 position-relative overflow-hidden">
-            <button class="changeBtn btn btn-outline-success my-3 fw-bolder fs-3 rounded-pill px-4" [routerLink]='"."'
-            [fragment]="'change'">Make a
+            <button class="changeBtn btn btn-outline-success my-3 fw-bolder fs-3 rounded-pill px-4" (click)="change()">Make a
                 change
                 today!</button>
 
@@ -286,7 +283,7 @@
 
     <div id="healthy" class="bg-light">
         <div class="container py-5">
-            <div class="text-center py-5 w-75 m-auto">
+            <div class="text-center py-5 w-75 m-auto head">
                 <h2 class="fw-bolder fs-1 pb-2">
                     Healthy weight
                 </h2>
@@ -326,8 +323,7 @@
             </div>
         </div>
         <div class="healthyFooter text-center py-5 position-relative overflow-hidden">
-            <button class="changeBtn btn btn-outline-success my-3 fw-bolder fs-3 rounded-pill px-4" [routerLink]='"."'
-            [fragment]="'change'">Make a
+            <button class="changeBtn btn btn-outline-success my-3 fw-bolder fs-3 rounded-pill px-4" (click)="change()">Make a
                 change
                 today!</button>
 
@@ -338,7 +334,7 @@
 
     <div id="under" class="bg-light">
         <div class="container py-5">
-            <div class="text-center py-5 w-75 m-auto">
+            <div class="text-center py-5 w-75 m-auto head">
                 <h2 class="fw-bolder fs-1 pb-2">
                     Underweight
                 </h2>
@@ -441,7 +437,7 @@
 
     <div id="change" class="bg-light">
         <div class="headChange text-center py-3">
-            <div class="container w-75 m-auto">
+            <div class="container w-75 m-auto head">
                 <h2 class="fw-bolder fs-1 pb-2">
                     Make a change today!
                 </h2>
