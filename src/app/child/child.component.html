@@ -18,7 +18,7 @@
                             healthy weight with a few simple changes to help them eat more healthily and be more active.
                         </p>
 
-                        <button class="btn btn-outline-success my-3 fw-bolder fs-3 rounded-pill px-4" (click)="change()">Make a
+                        <button pageScroll [pageScrollDuration]="1000" href="#change" class="btn btn-success my-3 fw-bolder fs-3 rounded-pill px-4">Make a
                             change today!</button>
                         <p>
                             <a class="open d-flex align-items-center fs-4" data-bs-toggle="collapse"
@@ -47,10 +47,10 @@
             </div>
         </div>
         <div class="headNav text-center py-2">
-            <a (click)="very()" class="m-2 link">Very overweight</a>
-            <a (click)="over()" class="m-2 link">Overweight</a>
-            <a (click)="healthy()" class="m-2 link">Healthy weight</a>
-            <a (click)="under()" class="m-2 link">Under weight</a>
+            <a pageScroll [pageScrollDuration]="1000" href="#very" class="m-2 link">Very overweight</a>
+            <a pageScroll [pageScrollDuration]="1000" href="#over" class="m-2 link">Overweight</a>
+            <a pageScroll [pageScrollDuration]="1000" href="#healthy" class="m-2 link">Healthy weight</a>
+            <a pageScroll [pageScrollDuration]="1000" href="#under" class="m-2 link">Under weight</a>
         </div>
     </header>
 
@@ -159,7 +159,7 @@
             </div>
         </div>
         <div class="veryFooter text-center py-5 position-relative overflow-hidden">
-            <button class="changeBtn btn btn-outline-success my-3 fw-bolder fs-3 rounded-pill px-4" (click)="change()">Make a
+            <button pageScroll class="changeBtn btn btn-success my-3 fw-bolder fs-3 rounded-pill px-4" [pageScrollDuration]="1000" href="#change">Make a
                 change
                 today!</button>
 
@@ -272,7 +272,7 @@
             </div>
         </div>
         <div class="overFooter text-center py-5 position-relative overflow-hidden">
-            <button class="changeBtn btn btn-outline-success my-3 fw-bolder fs-3 rounded-pill px-4" (click)="change()">Make a
+            <button pageScroll class="changeBtn btn btn-success my-3 fw-bolder fs-3 rounded-pill px-4" [pageScrollDuration]="1000" href="#change">Make a
                 change
                 today!</button>
 
@@ -323,7 +323,7 @@
             </div>
         </div>
         <div class="healthyFooter text-center py-5 position-relative overflow-hidden">
-            <button class="changeBtn btn btn-outline-success my-3 fw-bolder fs-3 rounded-pill px-4" (click)="change()">Make a
+            <button pageScroll class="changeBtn btn btn-success my-3 fw-bolder fs-3 rounded-pill px-4" [pageScrollDuration]="1000" href="#change">Make a
                 change
                 today!</button>
 

@@ -30,7 +30,7 @@ import { RouterModule} from '@angular/router';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { FoodComponent } from './food/food.component';
 import { FlipModule } from 'ngx-flip';
-
+import { NgxPageScrollModule } from 'ngx-page-scroll';
 
 @NgModule({
   declarations: [
@@ -69,7 +69,7 @@ import { FlipModule } from 'ngx-flip';
     RouterModule,
     CarouselModule,
     FlipModule,
-
+    NgxPageScrollModule,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
